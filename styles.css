@@ -1,0 +1,70 @@
+@font-face {
+        font-family: 'NATS';
+        src: url('fonts/NATS-Regular.woff2') format('woff2'),
+             url('fonts/NATS-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+.container {
+    border: px solid pink; 
+    width: 2080px;
+    background-color: #FEEFDF;
+}
+
+.title {
+    /* https://stackoverflow.com/questions/8384751/css-text-gradient */
+    font-family: NATS;
+    /*
+    background: #ffffff;
+    background: linear-gradient(90deg,rgba(230, 170, 170, 1) 0%, rgba(220, 47, 98, 0.87) 14%, rgba(255, 133, 133, 1) 50%, rgb(247, 167, 53) 100%);
+    background-clip: text;
+    color: transparent;
+    */
+    text-align: center;
+    text-shadow: 1px 3px 7px #FFFF; 
+    letter-spacing: 5px;
+}
+
+    .section {
+        width: 500px;
+        height: 600px;
+    }
+
+.header {
+     /* https://cssgradient.io/ */
+    font-family: NATS;
+    letter-spacing: 1.5px;
+    
+    background: #ffffff;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 1) 60%);
+    
+    /* background-color: lightyellow */
+    
+}
+ 
+.footer {
+    /* https://cssgradient.io/ */
+    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 0.75) 60%);
+    height: 60px;
+    width: 1100px;
+}
+
+
+img {
+  object-fit: cover;
+}
+
+
+.large-img {
+    width: 350px;
+    height: 540px;
+    margin-lefT: 40px;
+}
+
+.small-img {
+    width: 250px;
+    height: 250px;
+}
+ 
