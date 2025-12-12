@@ -1,16 +1,18 @@
 @font-face {
-        font-family: 'NATS';
-        src: url('fonts/NATS-Regular.woff2') format('woff2'),
-             url('fonts/NATS-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-.container {
-    border: px solid pink; 
-    width: 2080px;
-    background-color: #FEEFDF;
+    font-family: "NATS";
+    src:
+        url("fonts/NATS-Regular.woff2") format("woff2"),
+        url("fonts/NATS-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
+
+/*
+.container {
+    border: px solid pink;
+    background-color: #feefdf;
+}
+*/ 
 
 .title {
     /* https://stackoverflow.com/questions/8384751/css-text-gradient */
@@ -22,49 +24,69 @@
     color: transparent;
     */
     text-align: center;
-    text-shadow: 1px 3px 7px #FFFF; 
+    text-shadow: 1px 3px 7px #ffff;
     letter-spacing: 5px;
 }
 
-    .section {
-        width: 500px;
-        height: 600px;
-    }
+.section {
+    width: 500px;
+    height: 600px;
+}
 
 .header {
-     /* https://cssgradient.io/ */
+    /* https://cssgradient.io/ */
     font-family: NATS;
     letter-spacing: 1.5px;
-    
-    background: #ffffff;
-    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 1) 60%);
-    
-    /* background-color: lightyellow */
-    
+
+    background-color: #FEEFDF;
+
+    /* background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 1) 60%);
+     * background-color: lightyellow */
 }
- 
+.header,
 .footer {
-    /* https://cssgradient.io/ */
-    background: #ffffff;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 0.75) 60%);
-    height: 60px;
-    width: 1100px;
+    background-color: #FEEFDF;
+    max-width: 1250px;     
+    margin: 0 auto;        
+    padding: 0.75rem 1rem;  
+    border-radius: 4px;     
+}
+
+
+.footer {
+    font-family: NATS;      /* same as header */
+    background-color: #FEEFDF;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 0.3rem;
+}
+
+
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;   /* limit image size */
+    height: auto;
+    margin: 0 auto;     /* center inside the column */
+    display: block;
 }
 
 
 img {
-  object-fit: cover;
+    object-fit: cover;
 }
-
 
 .large-img {
     width: 350px;
     height: 540px;
-    margin-lefT: 40px;
+    margin-left: 40px;
 }
 
 .small-img {
     width: 250px;
     height: 250px;
 }
- 
