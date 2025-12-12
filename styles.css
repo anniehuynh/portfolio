@@ -12,7 +12,7 @@
     border: px solid pink;
     background-color: #feefdf;
 }
-*/ 
+*/
 
 .title {
     /* https://stackoverflow.com/questions/8384751/css-text-gradient */
@@ -38,24 +38,23 @@
     font-family: NATS;
     letter-spacing: 1.5px;
 
-    background-color: #FEEFDF;
+    background-color: #feefdf;
 
     /* background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(250, 177, 186, 1) 60%);
      * background-color: lightyellow */
 }
 .header,
 .footer {
-    background-color: #FEEFDF;
-    max-width: 1250px;     
-    margin: 0 auto;        
-    padding: 0.75rem 1rem;  
-    border-radius: 4px;     
+    background-color: #feefdf;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
 }
 
-
 .footer {
-    font-family: NATS;      /* same as header */
-    background-color: #FEEFDF;
+    font-family: NATS; /* same as header */
+    background-color: #feefdf;
     text-align: center;
     padding: 1rem 0;
 }
@@ -65,26 +64,31 @@
     margin-bottom: 0.3rem;
 }
 
-
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .gallery img {
     width: 100%;
-    max-width: 350px;   /* limit image size */
+    max-width: 350px; /* small images */
     height: auto;
-    margin: 0 auto;     /* center inside the column */
     display: block;
-}
-
-
-img {
-    object-fit: cover;
+    margin: 0 auto;   /* center inside column */
 }
 
 .large-img {
     width: 350px;
     height: 540px;
-    margin-left: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* center in column */
 }
+
+img {
+    object-fit: cover;
+}
+
 
 .small-img {
     width: 250px;
